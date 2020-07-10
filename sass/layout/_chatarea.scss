@@ -5,8 +5,8 @@
 
 .chatmic{ 
     position:fixed;
-    bottom: -10rem;
-    right: -1rem;
+    bottom: 2rem;
+    right: 2rem;
     height: 7.2rem;
     width: 7.2rem;
     border-radius: 50%;
@@ -34,7 +34,7 @@
     &__user{
         background: var(--dark-blue);
         color: var(--user-textcolor);
-        border-radius: 40px 40px 40px 0;
+        border-radius: 0 40px 40px 40px;
 
     }
 
