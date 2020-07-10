@@ -1,0 +1,15 @@
+.chatUser__phone{
+   position: relative;
+
+   &--case{
+       position: absolute;
+       height: 66rem;
+   }
+   &--femaleAvatar{
+       position: absolute;
+       top: 70%;
+       left: 40%;
+       transform: translate(-55%, 70%);
+       height: 25rem;
+   }
+}

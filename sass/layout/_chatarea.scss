@@ -1,0 +1,14 @@
+
+.chat-mic{ 
+    position:absolute;
+    bottom: -10rem;
+    right: -1rem;
+    height: 9.2rem;
+    width: 9.2rem;
+    border-radius: 50%;
+    background-color: var(--disabled-mic);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
