@@ -20,7 +20,7 @@
         color: var(--color-moon);
     }
     &__sun{
-        margin-left: -3.5rem;
+        margin-left: -3rem;
         color: var(--color-sun);
     }
 }
@@ -46,6 +46,12 @@
     background-color: var(--color-header);
     color: var(--color-black);
     box-shadow: var(--header-shadow);
+    height: 10rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
 
     &__title{
         font-weight: 300;

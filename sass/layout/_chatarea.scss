@@ -1,14 +1,48 @@
+//mixins
+@mixin chatbase{
+    border-radius: 0px 37px 37px 37px;
+}
 
-.chat-mic{ 
-    position:absolute;
+.chatmic{ 
+    position:fixed;
     bottom: -10rem;
     right: -1rem;
-    height: 9.2rem;
-    width: 9.2rem;
+    height: 7.2rem;
+    width: 7.2rem;
     border-radius: 50%;
     background-color: var(--disabled-mic);
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &__img{
+        height: 5rem;
+    }
+}
+
+.chatarea{
+
+    &__textbase{
+        width: 70%;
+        height: 8rem;
+        padding: 2rem;
+        margin: 3.5rem;
+
+    }
+
+    &__user{
+        background: var(--dark-blue);
+        color: var(--user-textcolor);
+        border-radius: 40px 40px 40px 0;
+
+    }
+
+    &__bot{
+        background: var(--color-lime);
+        color: var(--bot-textcolor);
+        border-radius: 40px 40px 0 40px;
+        margin: 0 auto;
+
+    }
 }

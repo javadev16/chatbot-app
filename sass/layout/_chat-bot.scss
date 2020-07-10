@@ -1,6 +1,11 @@
 .chatbot{
+    &__img{
+        //position: fixed;
+        margin-top: 14rem;
+    }
     &__phone{
-        position: relative;
+        position: fixed;
+        
 
         &--case{
             height: 66rem;
@@ -10,7 +15,7 @@
     &__body{
         position: absolute;
         top: 55%;
-        left: 5%;
+        left: 10%;
         transform: translate(10%, -40%);
         height: 20rem;
     }

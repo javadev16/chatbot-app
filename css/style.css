@@ -21,7 +21,9 @@ html {
   --color-black: #222222;
   --header-shadow: 0px 4px 4px rgba(172, 172, 172, 0.25);
   --disabled-mic: #c4c4c4;
-  --active-mic: #4AECDF; }
+  --active-mic: #4AECDF;
+  --bot-textcolor: #323145;
+  --user-textcolor: #fff; }
 
 .darkmode {
   --background-color: #46445F;
@@ -38,7 +40,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   background: var(--background-color);
-  font-size: 3.6rem;
+  font-size: 3rem;
   min-height: 100vh; }
 
 .container {
@@ -47,17 +49,36 @@ body {
   margin: 8rem 5rem;
   position: relative; }
 
-.chat-mic {
-  position: absolute;
+.chatmic {
+  position: fixed;
   bottom: -10rem;
   right: -1rem;
-  height: 9.2rem;
-  width: 9.2rem;
+  height: 7.2rem;
+  width: 7.2rem;
   border-radius: 50%;
   background-color: var(--disabled-mic);
   display: flex;
   justify-content: center;
   align-items: center; }
+  .chatmic__img {
+    height: 5rem; }
+
+.chatarea__textbase {
+  width: 70%;
+  height: 8rem;
+  padding: 2rem;
+  margin: 3.5rem; }
+
+.chatarea__user {
+  background: var(--dark-blue);
+  color: var(--user-textcolor);
+  border-radius: 40px 40px 40px 0; }
+
+.chatarea__bot {
+  background: var(--color-lime);
+  color: var(--bot-textcolor);
+  border-radius: 40px 40px 0 40px;
+  margin: 0 auto; }
 
 .label {
   height: 6.3rem;
@@ -78,7 +99,7 @@ body {
     visibility: hidden;
     color: var(--color-moon); }
   .toggle-icon__sun {
-    margin-left: -3.5rem;
+    margin-left: -3rem;
     color: var(--color-sun); }
 
 .checkbox {
@@ -98,13 +119,22 @@ body {
   align-items: center;
   background-color: var(--color-header);
   color: var(--color-black);
-  box-shadow: var(--header-shadow); }
+  box-shadow: var(--header-shadow);
+  height: 10rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1; }
   .header-chat__title {
     font-weight: 300;
     font-size: 6.4rem; }
 
+.chatUser__img {
+  height: calc(100vh - 10rem);
+  margin-top: 14rem; }
+
 .chatUser__phone {
-  position: relative; }
+  position: fixed; }
   .chatUser__phone--case {
     position: absolute;
     height: 66rem; }
@@ -112,18 +142,21 @@ body {
     position: absolute;
     top: 70%;
     left: 40%;
-    transform: translate(-55%, 70%);
+    transform: translate(15%, 70%);
     height: 25rem; }
 
+.chatbot__img {
+  margin-top: 14rem; }
+
 .chatbot__phone {
-  position: relative; }
+  position: fixed; }
   .chatbot__phone--case {
     height: 66rem; }
 
 .chatbot__body {
   position: absolute;
   top: 55%;
-  left: 5%;
+  left: 10%;
   transform: translate(10%, -40%);
   height: 20rem; }
 

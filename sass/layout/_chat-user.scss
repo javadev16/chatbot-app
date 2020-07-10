@@ -1,15 +1,24 @@
-.chatUser__phone{
-   position: relative;
+.chatUser{
+    &__img{
+        //position: fixed;
+        height: calc(100vh - 10rem);
+        margin-top: 14rem;
 
-   &--case{
-       position: absolute;
-       height: 66rem;
-   }
-   &--femaleAvatar{
-       position: absolute;
-       top: 70%;
-       left: 40%;
-       transform: translate(-55%, 70%);
-       height: 25rem;
-   }
+    }
+    &__phone{
+        position: fixed;
+
+        &--case{
+            position: absolute;
+            height: 66rem;
+        }
+        &--femaleAvatar{
+            position: absolute;
+            top: 70%;
+            left: 40%;
+            transform: translate(15%, 70%);
+            height: 25rem;
+        }
+    }
+
 }
