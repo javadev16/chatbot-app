@@ -6,9 +6,12 @@
     box-sizing: inherit;
 }
 
+//breaking points
+
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    @media only screen and (min-width: 1600px){}
 }
 
 :root{
@@ -44,7 +47,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     background: var(--background-color);
-    font-size: 3rem;
+    font-size: 2.6rem;
     min-height: 100vh;
 }
 
