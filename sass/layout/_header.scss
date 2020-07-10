@@ -1,0 +1,54 @@
+//toggle
+.label{
+    height: 6.3rem;
+    width: 6.3rem;
+    border-radius: 50%;
+    background: var(--color-toggle);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle{ 
+    margin: -6rem 60rem 2rem 5rem;
+}
+.toggle-icon {
+    color: var(--color-yellow);
+
+    &__moon{
+        opacity: 0;
+        visibility: hidden;
+        color: var(--color-moon);
+    }
+    &__sun{
+        margin-left: -3.5rem;
+        color: var(--color-sun);
+    }
+}
+.checkbox{ 
+    visibility: hidden;
+    opacity: 0;
+}
+
+.checkbox:checked + .label .toggle-icon__moon{
+    visibility: visible;
+    opacity: 1;
+}
+
+.checkbox:checked + .label .toggle-icon__sun{
+    visibility: hidden;
+    opacity: 0;
+}
+
+//header
+.header-chat{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-header);
+    color: var(--color-black);
+    box-shadow: var(--header-shadow);
+
+    &__title{
+        font-weight: 300;
+        font-size: 6.4rem;
+    }
+}

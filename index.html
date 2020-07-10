@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Chatbox app</title>
 </head>
 <body>
-    
-    <main class="container">
-        <header class="header-chat">Have a chat with Kio</header>
+        
+        <header class="header-chat">
 
+            <div class="toggle">
+                <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+                <label for="checkbox" class="label">
+                    <i class="toggle-icon toggle-icon__moon fas fa-moon"></i>
+                    <i class="toggle-icon toggle-icon__sun fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+
+            <h1 class="header-chat__title">Have a chat with Kio</h1>
+        </header>
+    <main class="container">
+        
         <section class="chatUser__img">
             <div class="chatUser__phone">
                 <!-- <img src="img/phone-case.svg" alt="phone case" class="chatUser__phone--case"> -->
