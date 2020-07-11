@@ -14,6 +14,9 @@ html {
   @media only screen and (max-width: 75rem) {
     html {
       font-size: 48%; } }
+  @media only screen and (max-width: 75rem) {
+    html {
+      font-size: 44%; } }
 
 :root {
   --background-color: #F0EBEB;
@@ -61,6 +64,10 @@ body {
   @media only screen and (max-width: 68.75em) {
     .container {
       margin: 0 3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      grid-template-columns: .5fr 2fr .5fr;
+      margin: 4rem 2rem; } }
 
 .chatmic {
   position: fixed;
@@ -114,6 +121,9 @@ body {
   @media only screen and (max-width: 75rem) {
     .toggle {
       margin-right: 40rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .toggle {
+      margin-right: 30rem; } }
 
 .toggle-icon {
   color: var(--color-yellow); }
@@ -176,6 +186,9 @@ body {
     left: 40%;
     transform: translate(15%, 70%);
     height: 25rem; }
+    @media only screen and (max-width: 56.25em) {
+      .chatUser__phone--femaleAvatar {
+        height: 15rem; } }
 
 .chatbot__img {
   margin-top: 14rem; }
@@ -220,6 +233,11 @@ body {
     position: absolute;
     top: 17%; } }
 
+@media only screen and (max-width: 56.25em) {
+  .chatbot__circle-body {
+    visibility: hidden;
+    opacity: 0; } }
+
 @media only screen and (max-width: 90em) {
   .chatbot__shadow {
     width: 25rem; } }
@@ -240,3 +258,7 @@ body {
   @media only screen and (max-width: 68.75em) {
     .chatbot__face {
       top: -22%; } }
+  @media only screen and (max-width: 56.25em) {
+    .chatbot__face {
+      left: -15%;
+      height: 12rem; } }

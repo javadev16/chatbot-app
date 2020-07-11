@@ -27,6 +27,10 @@
             left: 40%;
             transform: translate(15%, 70%);
             height: 25rem;
+
+            @media only screen and (max-width: $ipad){
+                height: 15rem;
+            }
         }
     }
 

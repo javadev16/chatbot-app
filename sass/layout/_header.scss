@@ -16,6 +16,9 @@
     @media only screen and (max-width: $laptop){
         margin-right: 40rem;
     }
+    @media only screen and (max-width: $ipad){
+        margin-right: 30rem;
+    }
 }
 .toggle-icon {
     color: var(--color-yellow);

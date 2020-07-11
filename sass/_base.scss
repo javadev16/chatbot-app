@@ -10,6 +10,7 @@
 $destop: 90em; //1440px
 $laptop: 75rem; //1200px
 $mini-laptop: 68.75em; //1100px
+$ipad: 56.25em; //900px
 html{
     box-sizing: border-box;
     font-size: 62.5%;
@@ -19,6 +20,12 @@ html{
     @media only screen and (max-width: $laptop){
         font-size: 48%;
     }
+    @media only screen and (max-width: $laptop){
+        font-size: 44%;
+    }
+    // @media only screen and (max-width: $ipad){
+    //     font-size: 40%;
+    // }
 }
 
 :root{
@@ -70,5 +77,9 @@ body{
 
     @media only screen and (max-width: $mini-laptop){
         margin: 0 3rem;
+    }
+    @media only screen and (max-width: $ipad){
+        grid-template-columns: .5fr 2fr .5fr;
+        margin: 4rem 2rem;
     }
 }
