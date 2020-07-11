@@ -8,7 +8,8 @@
 
 //breaking points
 $destop: 90em; //1440px
-$laptop: 75rem;
+$laptop: 75rem; //1200px
+$mini-laptop: 68.75em; //1100px
 html{
     box-sizing: border-box;
     font-size: 62.5%;
@@ -35,6 +36,7 @@ html{
     --active-mic: #4AECDF;
     --bot-textcolor: #323145;
     --user-textcolor: #fff;
+    --dark-gray: ##c4c4c4;
 }
 
 .darkmode{
@@ -65,4 +67,8 @@ body{
     grid-template-columns: 1fr 2fr 1fr;
     margin: 8rem 5rem;
     position: relative;
+
+    @media only screen and (max-width: $mini-laptop){
+        margin: 0 3rem;
+    }
 }

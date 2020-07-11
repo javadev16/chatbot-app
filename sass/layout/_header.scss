@@ -13,6 +13,9 @@
     @media only screen and (max-width: $destop){
         margin-right: 50rem;
     }
+    @media only screen and (max-width: $laptop){
+        margin-right: 40rem;
+    }
 }
 .toggle-icon {
     color: var(--color-yellow);

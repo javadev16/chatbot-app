@@ -13,6 +13,13 @@
             @media only screen and (max-width: $destop){
                 height: 60rem;
             }
+            // @media only screen and (max-width: $laptop){
+            //     height: 50rem;
+            // }
+            @media only screen and (max-width: $mini-laptop){
+                opacity: 0;
+                visibility: hidden;
+            }
         }
         &--femaleAvatar{
             position: absolute;

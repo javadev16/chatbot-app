@@ -22,12 +22,18 @@
 }
 
 .chatarea{
-    padding-top: 10rem;
+     padding-top: 10rem;
+    margin: 3rem 0;
 
     &__textbase{
         width: 66%;
         padding: 2rem;
         margin: 3.5rem;
+
+         @media only screen and (max-width: $laptop){
+            width: 76%;
+            margin: 2rem;
+        }
 
     }
 
