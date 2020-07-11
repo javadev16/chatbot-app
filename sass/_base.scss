@@ -11,6 +11,9 @@ $destop: 90em; //1440px
 $laptop: 75rem; //1200px
 $mini-laptop: 68.75em; //1100px
 $ipad: 56.25em; //900px
+$sm-ipad: 48em; //768px
+$bg-phone: 37.5em; //600px
+$md-phone: 31.25em; //500px
 html{
     box-sizing: border-box;
     font-size: 62.5%;
@@ -23,9 +26,12 @@ html{
     @media only screen and (max-width: $laptop){
         font-size: 44%;
     }
-    // @media only screen and (max-width: $ipad){
-    //     font-size: 40%;
-    // }
+    @media only screen and (max-width: $bg-phone){
+        font-size: 42%;
+    }
+    @media only screen and (max-width: $md-phone){
+        font-size: 38%;
+    }
 }
 
 :root{
@@ -44,6 +50,7 @@ html{
     --bot-textcolor: #323145;
     --user-textcolor: #fff;
     --dark-gray: ##c4c4c4;
+    --color-gray: #7c7c7c;
 }
 
 .darkmode{
@@ -81,5 +88,12 @@ body{
     @media only screen and (max-width: $ipad){
         grid-template-columns: .5fr 2fr .5fr;
         margin: 4rem 2rem;
+    }
+    @media only screen and (max-width: $bg-phone){
+        grid-template-columns: .3fr 2fr .3fr;
+    }
+    @media only screen and (max-width: $md-phone){
+        grid-template-columns: .2fr 2fr .2fr;
+        margin: 4rem 1rem;
     }
 }

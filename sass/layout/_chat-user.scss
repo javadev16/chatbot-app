@@ -31,6 +31,13 @@
             @media only screen and (max-width: $ipad){
                 height: 15rem;
             }
+            @media only screen and (max-width: $bg-phone){
+                height: 10rem;
+            }
+            @media only screen and (max-width: $md-phone){
+                visibility: hidden;
+                opacity: 0;
+            }
         }
     }
 

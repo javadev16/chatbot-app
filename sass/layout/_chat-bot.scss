@@ -82,6 +82,17 @@
             left: -15%;
             height: 12rem;
         }
+        @media only screen and (max-width: $sm-ipad){
+            height: 10rem;
+        }
+        @media only screen and (max-width: $bg-phone){
+            height: 6rem;
+        }
+        @media only screen and (max-width: $md-phone){
+            visibility: hidden;
+            opacity: 0;
+        }
+        
         
     }
 }

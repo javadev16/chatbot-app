@@ -17,6 +17,12 @@ html {
   @media only screen and (max-width: 75rem) {
     html {
       font-size: 44%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 42%; } }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 38%; } }
 
 :root {
   --background-color: #F0EBEB;
@@ -33,7 +39,8 @@ html {
   --active-mic: #4AECDF;
   --bot-textcolor: #323145;
   --user-textcolor: #fff;
-  --dark-gray: ##c4c4c4; }
+  --dark-gray: ##c4c4c4;
+  --color-gray: #7c7c7c; }
 
 .darkmode {
   --background-color: #46445F;
@@ -68,6 +75,13 @@ body {
     .container {
       grid-template-columns: .5fr 2fr .5fr;
       margin: 4rem 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      grid-template-columns: .3fr 2fr .3fr; } }
+  @media only screen and (max-width: 31.25em) {
+    .container {
+      grid-template-columns: .2fr 2fr .2fr;
+      margin: 4rem 1rem; } }
 
 .chatmic {
   position: fixed;
@@ -85,7 +99,9 @@ body {
 
 .chatarea {
   padding-top: 10rem;
-  margin: 3rem 0; }
+  margin: 3rem 0;
+  position: relative;
+  z-index: -1; }
   .chatarea__textbase {
     width: 66%;
     padding: 2rem;
@@ -94,10 +110,21 @@ body {
       .chatarea__textbase {
         width: 76%;
         margin: 2rem; } }
+    @media only screen and (max-width: 48em) {
+      .chatarea__textbase {
+        width: 79%; } }
+    @media only screen and (max-width: 37.5em) {
+      .chatarea__textbase {
+        font-size: 84%; } }
   .chatarea__user {
     background: var(--dark-blue);
     color: var(--user-textcolor);
     border-radius: 0px 40px 40px 40px; }
+  .chatarea__info {
+    text-align: center;
+    border-radius: 40px;
+    background: var(--color-gray);
+    color: var(--user-textcolor); }
   .chatarea__bot {
     background: var(--color-lime);
     color: var(--bot-textcolor);
@@ -124,6 +151,12 @@ body {
   @media only screen and (max-width: 56.25em) {
     .toggle {
       margin-right: 30rem; } }
+  @media only screen and (max-width: 48em) {
+    .toggle {
+      margin-right: 20rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .toggle {
+      margin-right: 14rem; } }
 
 .toggle-icon {
   color: var(--color-yellow); }
@@ -164,6 +197,12 @@ body {
   .header-chat__title {
     font-weight: 300;
     font-size: 6.4rem; }
+    @media only screen and (max-width: 48em) {
+      .header-chat__title {
+        font-size: 5.6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header-chat__title {
+        font-size: 4rem; } }
 
 .chatUser__img {
   margin-top: 14rem; }
@@ -189,6 +228,13 @@ body {
     @media only screen and (max-width: 56.25em) {
       .chatUser__phone--femaleAvatar {
         height: 15rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .chatUser__phone--femaleAvatar {
+        height: 10rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .chatUser__phone--femaleAvatar {
+        visibility: hidden;
+        opacity: 0; } }
 
 .chatbot__img {
   margin-top: 14rem; }
@@ -262,3 +308,13 @@ body {
     .chatbot__face {
       left: -15%;
       height: 12rem; } }
+  @media only screen and (max-width: 48em) {
+    .chatbot__face {
+      height: 10rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .chatbot__face {
+      height: 6rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .chatbot__face {
+      visibility: hidden;
+      opacity: 0; } }

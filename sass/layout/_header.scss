@@ -19,6 +19,12 @@
     @media only screen and (max-width: $ipad){
         margin-right: 30rem;
     }
+    @media only screen and (max-width: $sm-ipad){
+        margin-right: 20rem;
+    }
+    @media only screen and (max-width: $bg-phone){
+        margin-right: 14rem;
+    }
 }
 .toggle-icon {
     color: var(--color-yellow);
@@ -69,5 +75,13 @@
     &__title{
         font-weight: 300;
         font-size: 6.4rem;
+
+        @media only screen and (max-width: $sm-ipad){
+            font-size: 5.6rem;
+        }
+
+        @media only screen and (max-width: $bg-phone){
+            font-size: 4rem;
+        }
     }
 }
