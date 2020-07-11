@@ -9,6 +9,10 @@
         &--case{
             position: absolute;
             height: 66rem;
+
+            @media only screen and (max-width: $destop){
+                height: 60rem;
+            }
         }
         &--femaleAvatar{
             position: absolute;

@@ -7,11 +7,17 @@
 }
 
 //breaking points
-
+$destop: 90em; //1440px
+$laptop: 75rem;
 html{
     box-sizing: border-box;
     font-size: 62.5%;
-    @media only screen and (min-width: 1600px){}
+    @media only screen and (max-width: $destop){
+        font-size: 55%;
+    }
+    @media only screen and (max-width: $laptop){
+        font-size: 48%;
+    }
 }
 
 :root{
@@ -49,6 +55,9 @@ body{
     background: var(--background-color);
     font-size: 2.6rem;
     min-height: 100vh;
+    @media only screen and (max-width: $destop){
+        font-size: 2.4rem;
+    }
 }
 
 .container{

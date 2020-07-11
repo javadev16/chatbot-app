@@ -10,6 +10,9 @@
 }
 .toggle{ 
     margin: -3rem 60rem 2rem 5rem;
+    @media only screen and (max-width: $destop){
+        margin-right: 50rem;
+    }
 }
 .toggle-icon {
     color: var(--color-yellow);
@@ -22,6 +25,10 @@
     &__sun{
         margin-left: -3rem;
         color: var(--color-sun);
+    }
+
+    @media only screen and (max-width: $destop){
+        font-size: 3rem;
     }
 }
 .checkbox{ 

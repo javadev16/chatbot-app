@@ -9,6 +9,9 @@
 
         &--case{
             height: 66rem;
+            @media only screen and (max-width: $destop){
+                height: 60rem;
+            }
         }
     }
 
@@ -18,12 +21,35 @@
         left: 10%;
         transform: translate(10%, -40%);
         height: 20rem;
+        @media only screen and (max-width: $destop){
+            height: 10rem;
+            left: 4%;
+            top: 50%;
+        }
+    }
+
+    &__circle-body {
+        @media only screen and (max-width: $destop){
+            height: 25rem;
+        }
+    }
+
+    &__shadow{
+        @media only screen and (max-width: $destop){
+            width: 25rem;
+        }
+
     }
 
     &__face{
         position: absolute;
         top: -19rem;
         left: -2.5rem;
+        @media only screen and (max-width: $destop){
+            height: 15rem;
+            left: -1.2rem;
+        }
+        
     }
 }
 

@@ -8,6 +8,12 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 90em) {
+    html {
+      font-size: 55%; } }
+  @media only screen and (max-width: 75rem) {
+    html {
+      font-size: 48%; } }
 
 :root {
   --background-color: #F0EBEB;
@@ -42,6 +48,9 @@ body {
   background: var(--background-color);
   font-size: 2.6rem;
   min-height: 100vh; }
+  @media only screen and (max-width: 90em) {
+    body {
+      font-size: 2.4rem; } }
 
 .container {
   display: grid;
@@ -63,22 +72,21 @@ body {
   .chatmic__img {
     height: 5rem; }
 
-.chatarea__textbase {
-  width: 66%;
-  height: 8rem;
-  padding: 2rem;
-  margin: 3.5rem; }
-
-.chatarea__user {
-  background: var(--dark-blue);
-  color: var(--user-textcolor);
-  border-radius: 40px 40px 40px 0; }
-
-.chatarea__bot {
-  background: var(--color-lime);
-  color: var(--bot-textcolor);
-  border-radius: 40px 40px 0 40px;
-  margin: 0 auto; }
+.chatarea {
+  padding-top: 10rem; }
+  .chatarea__textbase {
+    width: 66%;
+    padding: 2rem;
+    margin: 3.5rem; }
+  .chatarea__user {
+    background: var(--dark-blue);
+    color: var(--user-textcolor);
+    border-radius: 0px 40px 40px 40px; }
+  .chatarea__bot {
+    background: var(--color-lime);
+    color: var(--bot-textcolor);
+    border-radius: 40px 0px 40px 40px;
+    margin: 0 auto; }
 
 .label {
   height: 6.3rem;
@@ -91,6 +99,9 @@ body {
 
 .toggle {
   margin: -3rem 60rem 2rem 5rem; }
+  @media only screen and (max-width: 90em) {
+    .toggle {
+      margin-right: 50rem; } }
 
 .toggle-icon {
   color: var(--color-yellow); }
@@ -101,6 +112,9 @@ body {
   .toggle-icon__sun {
     margin-left: -3rem;
     color: var(--color-sun); }
+  @media only screen and (max-width: 90em) {
+    .toggle-icon {
+      font-size: 3rem; } }
 
 .checkbox {
   visibility: hidden;
@@ -137,6 +151,9 @@ body {
   .chatUser__phone--case {
     position: absolute;
     height: 66rem; }
+    @media only screen and (max-width: 90em) {
+      .chatUser__phone--case {
+        height: 60rem; } }
   .chatUser__phone--femaleAvatar {
     position: absolute;
     top: 70%;
@@ -151,6 +168,9 @@ body {
   position: fixed; }
   .chatbot__phone--case {
     height: 66rem; }
+    @media only screen and (max-width: 90em) {
+      .chatbot__phone--case {
+        height: 60rem; } }
 
 .chatbot__body {
   position: absolute;
@@ -158,8 +178,25 @@ body {
   left: 10%;
   transform: translate(10%, -40%);
   height: 20rem; }
+  @media only screen and (max-width: 90em) {
+    .chatbot__body {
+      height: 10rem;
+      left: 4%;
+      top: 50%; } }
+
+@media only screen and (max-width: 90em) {
+  .chatbot__circle-body {
+    height: 25rem; } }
+
+@media only screen and (max-width: 90em) {
+  .chatbot__shadow {
+    width: 25rem; } }
 
 .chatbot__face {
   position: absolute;
   top: -19rem;
   left: -2.5rem; }
+  @media only screen and (max-width: 90em) {
+    .chatbot__face {
+      height: 15rem;
+      left: -1.2rem; } }
