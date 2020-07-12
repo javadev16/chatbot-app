@@ -1,6 +1,8 @@
 // toggles 
 let darkmode = localStorage.getItem('darkmode');
 const darkmodeToggleButton = document.querySelector('.toggle-button');
+const iconMoon = document.querySelector('.toggle-icon__moon');
+const iconSun = document.querySelector('.toggle-icon__sun');
 console.log(darkmode);
 
 //if enableddarkmode is off then turn it on if it's on turn it off
@@ -17,7 +19,7 @@ const disableDarkMode = ()=>{
 }
 if(darkmode === 'enabled'){
     enableDarkMode();
-}
+ }
 
 darkmodeToggleButton.addEventListener('click', () => {
     darkmode = localStorage.getItem('darkmode');

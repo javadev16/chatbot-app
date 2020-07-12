@@ -48,7 +48,10 @@
             width: 79%;
         }
         @media only screen and (max-width: $bg-phone){
-            font-size: 84%;
+            width: 84%;
+        }
+        @media only screen and (max-width: $phone){
+            width: 80%;
         }
         @media only screen and (max-width: $sm-phone){
             padding: 1.3rem 1.6rem;
@@ -66,6 +69,9 @@
         border-radius:  40px;
         background: var(--color-gray);
         color: var(--user-textcolor);
+        font-size: 2.3rem;
+        font-weight: 300;
+
     }
 
     &__bot{
@@ -73,6 +79,8 @@
         color: var(--bot-textcolor);
         border-radius: 40px 0px 40px 40px;
         margin: 0 auto;
+        padding: 1.5rem;
+        padding-left: 3rem;
 
     }
 }
